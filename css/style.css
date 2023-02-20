@@ -1,0 +1,289 @@
+/* Start Global Rules */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input:focus {
+    outline: none;
+}
+/* End Global Rules */
+
+/* Start Header */
+header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 86px;
+    background-color: white;
+    box-shadow: 0 0 10px #ddd;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+header .logo a {
+    color: black;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding: 5px 8px;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+header .logo a:hover {
+    background-color: #ccc;
+    box-shadow: 0 0 5px #3f51b5ad;
+}
+header .logo span:first-child {
+    text-transform: capitalize;
+}
+header .links {
+    display: flex;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2.8px;
+}
+header .links a {
+    color: black;
+    padding: 2px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+header .links a:hover {
+    background-color: #ccc;
+    box-shadow: 0 0 5px #3f51b5ad;
+}
+/* End Header */
+
+/* Starrt Landing */
+.landing {
+    height: 100vh;
+    background-image: url(../img/hamburger.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+}
+.landing h1 {
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    letter-spacing: 5px;
+    color: #888;
+}
+/* End Landing */
+
+
+/* Start About */
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 15px;
+    gap: 30px;
+    border-bottom: 1px solid #eee;
+}
+.about img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-bottom: 50px;
+}
+.about div {
+    width: 50%;
+    margin: 0 0 50px;
+}
+.about h2 {
+    
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+.about .first {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+.about .one {
+    color: #333;
+    line-height: 1.8;
+    font-size: 18px;
+    width: 85%;
+}
+.about p span {
+    padding: 0 4px;
+    background-color: #f1f1f1;
+}
+.about p:last-child {
+    margin-top: 30px;
+    color: #888;
+    line-height: 1.8;
+    width: 85%;
+}
+/* End About */
+
+
+/* Start Menu */
+.menu img {
+    height: 702px;
+    margin-bottom: 50px;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #eee;
+}
+.menu h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    color: #000000d4;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.menu .box {
+    margin-bottom: 50px;
+}
+.menu .box h4 {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 800;
+    line-height: 1.8;
+}
+.menu .box p {
+    color: #888;
+    line-height: 1.8;
+}
+/* End Menu */
+
+
+/* Start Coontact */
+.contact {
+    width: 75%;
+    margin: 0 auto;
+}
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.contact p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.contact h3 {
+    margin-bottom: 20px;
+    color: #888;
+}
+.contact form {
+    margin-top: 20px;
+}
+.contact form input:not(:last-child) {
+    width: 100%;
+    padding: 16px 8px;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+.contact form input {
+    margin-top: 20px;
+}
+.contact input:last-child {
+    padding: 8px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact input:last-child:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+/* End Coontact */
+
+/* Start Footer */
+footer {
+    background-color: #f1f1f1;
+    height: 70px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    color: black;
+    text-decoration: revert;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+footer a:hover {
+    color: red;
+}
+/* End Footer */
+
+
+
+
+/* Start Media (max-width: 767px) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .logo {
+        text-align: center;
+        margin: 15px 0;
+    }
+    header .logo a {
+        letter-spacing: 2px;
+        padding: 0 5px;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about img {
+        width: 100%;
+        height: auto;
+    }
+    .about div {
+        width: 100%;
+    }
+    .about p {
+        width: 100% !important;
+    }
+    .menu {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .menu img {
+        height: auto;
+    }
+    .contact {
+        margin: 0 15px;
+    }
+    .contact h3,
+    .contact span {
+        line-height: 1.4;
+    }
+}
+/* End Media (max-width: 767px) */
